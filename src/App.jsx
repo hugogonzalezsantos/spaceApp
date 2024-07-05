@@ -13,7 +13,6 @@ function App() {
       <FondoGradiente>
         <GlobalStyles />
         <Cabecera />
-        <CampoTexto/>
       </FondoGradiente>
     </>
   )

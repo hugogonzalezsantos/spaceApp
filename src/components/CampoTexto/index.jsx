@@ -17,18 +17,19 @@ const CampoTextoEstilizado = styled.input`
     font-weight: 400;
     font-size: 20px;
     line-height: 20px;
+    outline: none;
 `
 const IconoLupa = styled.img`
     position: absolute;
     top: 10px;
     right: 10px;
-    width: 38px;
+    width: 38px!important;
     height: 38px;
 `;
-const CampoTexto = (props) => {
+const CampoTexto = () => {
     return (
         <ContainerEstilizado>
-            <CampoTextoEstilizado placeholder="Busca una foto" {...props} />
+            <CampoTextoEstilizado type="text" placeholder="Busca una foto"/>
             <IconoLupa src={search} alt="ícono de lupa" />
         </ContainerEstilizado>
     )
